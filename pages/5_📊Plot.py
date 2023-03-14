@@ -19,4 +19,4 @@ st.markdown("---")
 
 with st.echo():
     fig = sns.boxplot(data=chart_data)
-st.pyplot(fig)
+    st.pyplot(fig)
