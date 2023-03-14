@@ -18,5 +18,8 @@ with st.echo():
 st.markdown("---")
 
 with st.echo():
-    fig = sns.boxplot(data=chart_data)
+    fig = plt.figure(figsize=(12,4))
+    x = np.arange(0, 2*np.pi, 0.1)
+    y = np.sin(x)
+    plt.plot(x, y)
     st.pyplot(fig)
